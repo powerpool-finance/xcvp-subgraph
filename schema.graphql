@@ -1,0 +1,25 @@
+type Info @entity {
+  id: ID!
+  lastPriceTick: BigInt!
+  lastVolumeTick: BigInt!
+  totalPriceTicks: Int!
+  totalVolumeTicks: Int!
+}
+
+type PriceTick @entity {
+  id: ID!
+  cvpPrice: BigDecimal!
+  xcvpPrice: BigDecimal!
+  timestamp: BigInt!
+  blockNumber: BigInt!
+  cvpBalance: BigInt!
+  totalSupply: BigInt!
+}
+
+type VolumeTick @entity {
+  id: ID!
+  totalVolume: BigDecimal!
+  tokensCount: Int!
+  timestamp: BigInt!
+  blockNumber: BigInt!
+}

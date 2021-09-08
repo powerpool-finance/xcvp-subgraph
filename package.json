@@ -1,0 +1,15 @@
+{
+  "name": "xcvp-subgraph",
+  "license": "MIT",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ powerpool-finance/power-xcvp",
+    "deploy-staging": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ polipaul/xcvp-buzz"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "^0.21.1",
+    "@graphprotocol/graph-ts": "^0.20.0",
+    "mustache": "^4.2.0"
+  }
+}
